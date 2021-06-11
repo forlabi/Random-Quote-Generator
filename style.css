@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family:advent;
+    font-weight: 700;
+    font-size: 2rem; 
+    
+}
+
+
+.quote-container{
+    width:auto;
+    max-width: 35rem;
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    background-color:rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2)
+}
+/* Icons */
+.fa-quote-left{
+    font-size: 4rem;
+}
+.fa-twitter{
+    font-size: 1.5rem;
+
+}
+
+.quote-text{
+    font-size:2.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600;
+    text-align: center;
+}
+
+.quote-author{
+    margin-top: 1rem;
+    font-family: tahoma;
+    font-weight:400;
+    font-style: italic;
+    
+}
+
+/* Button */
+.button-container{
+    display:flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family:cursive;
+    height: 2.5rem;
+    outline:none;
+    color: #fff;
+    background-color: #333;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 0.3rem #555;
+}
+
+
+.twitter-button:hover{
+    color:#38a1f3;
+}
+
+button:hover{
+    filter: brightness(135%);
+}
+
+button:active{
+    transform: translate(0, 0.1rem);
+    box-shadow: 0 0.1rem #fffaaa;
+}
+
+/*Loader */
+.loader{
+    border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(17, 17, 26);
+  border-bottom: 16px solid rgb(17, 17, 26);
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+<
+}
+
+/* End of Loader */
+
+
+
+@media screen and (max-width: 900px){
+    .quote-container{
+        margin: auto 2rem;
+        max-width: 10rem;
+    }
+
+    .quote-text{
+        font-size: 1.5rem;
+    }
+
+    .fa-quote-left{
+        font-size: 3rem;
+    }
+}
